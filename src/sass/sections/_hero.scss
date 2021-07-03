@@ -1,9 +1,23 @@
 .hero-section {
+    
     .hero-text-container{
-        p {
+        padding-top: 5vh;
+        position: relative;
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+        .hero-text-l {
             font-family: NeutralFace;
-            font-size: 150px;
+            font-size: 180px;
+            line-height: 1.1;
             margin-top: 0;
+        }
+        h1 {
+            position: absolute;
+            right: 300px;
+            bottom: 0;
+            font-family: NeutralFace; 
+            font-size: 24px;
         }
     }
     
