@@ -1,5 +1,4 @@
-.hero-section {
-    
+.hero-section {  
     .hero-text-container{
         padding-top: 5vh;
         position: relative;
@@ -7,7 +6,7 @@
         height: auto;
         margin: 0 auto;
         .hero-text-l {
-            font-family: NeutralFace;
+            font-family: $primary-font;
             font-size: 180px;
             line-height: 1.1;
             margin-top: 0;
@@ -19,7 +18,15 @@
             font-family: NeutralFace; 
             font-size: 24px;
         }
+    }  
+}
+
+@media screen and (min-device-width: 1200px) {
+    .hero-text-l { 
+        font-size: 180px;
+        line-height: 1.1;
     }
-    
-    
+}
+@media screen and (min-device-width: 1440px) {
+
 }

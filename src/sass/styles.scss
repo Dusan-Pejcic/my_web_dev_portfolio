@@ -1,12 +1,10 @@
+
+@import "./base/base";
 @import "./sections/nav";
 @import "./sections/hero";
 @font-face {
     font-family: OpenSans;
     src: url('../fonts/OpenSans-Regular.ttf');
-}
-@font-face {
-    font-family: Amatic;
-    src: url('../fonts/AmaticSC-Bold.ttf');
 }
 @font-face {
     font-family: NeutralFace;
@@ -17,6 +15,7 @@
 // ______________________________________ GLOBAL
 
 body {
+    position: relative;
     box-sizing: border-box;
     width: 100vw;
     overflow-x: hidden;
