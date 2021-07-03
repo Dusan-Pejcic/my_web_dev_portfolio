@@ -1,0 +1,58 @@
+
+.nav-container {
+    width: 100vw;
+    height: 5vh;
+    position: relative;
+    .valer-container {
+        position: absolute;
+        z-index: -10;
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+        .color-field {
+            flex: 1;
+        }
+        .color-field:nth-child(1) {
+            background-color: #EA5890;
+        }
+        .color-field:nth-child(2) {
+            background-color: #CD599C;
+        }
+        .color-field:nth-child(3) {
+            background-color: #B25CAC;
+        }
+        .color-field:nth-child(4) {
+            background-color: #965FB6;
+        }
+        .color-field:nth-child(5) {
+            background-color: #7C62C5;
+        }
+        .color-field:nth-child(6) {
+            background-color: #6365D2;
+        }
+        .color-field:nth-child(7) {
+            background-color: #4E69E0;
+        }
+        .color-field:nth-child(8) {
+            background-color: #406EEF;
+        }
+    }
+
+    .main-navigation {
+        display: none;  
+    }
+    .nav-item {
+        color: white;
+        padding: 0 40px;
+        font-size: 22px;
+        
+    }
+
+    @media screen and (min-device-width: 1200px) {
+        .main-navigation {
+            display: flex;
+        }
+  }
+    
+}
