@@ -24,6 +24,10 @@
       line-height: 1.1;
       margin-top: 0;
     }
+
+    .hero__h1-container {
+        position: relative;
+    }
     
     h1 {
       position: relative;
@@ -43,17 +47,21 @@
       .hero-text-sm {
         display: none;
       }
-      
+
       .hero-text-l {
         display: block;
         font-size: 18vh;
         line-height: 1.1;
       }
 
-      h1 {
+      .hero__h1-container {
         position: absolute;
-        right: 300px;
         bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+      h1 {
         font-size: 24px;
       }
     }
