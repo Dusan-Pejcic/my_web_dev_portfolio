@@ -1,57 +1,61 @@
-.hero-section {  
-    .hero-text-container{
-        position: relative;
-        width: 90vw;
-        height: 100vh;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        .hero-text {
-            font-family: $primary-font;
-        }
-        .hero-text-sm {
-            display: block;
-            font-size: 8vh;
-            margin: 0;;
-        }
-        .hero-text-l {
-            display: none;
-            line-height: 1.1;
-            margin-top: 0;
-        }
-        h1 {
-            position: relative;
-            font-family: NeutralFace; 
-            font-size: 18px;
-        }
-    }  
+.hero-section {
+
+  .hero-text-container {
+    position: relative;
+    width: 90vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .hero-text {
+      font-family: $primary-font;
+    }
+
+    .hero-text-sm {
+      display: block;
+      font-size: 8vh;
+      margin: 0;
+    }
+
+    .hero-text-l {
+      display: none;
+      line-height: 1.1;
+      margin-top: 0;
+    }
+    
+    h1 {
+      position: relative;
+      font-family: NeutralFace;
+      font-size: 18px;
+    }
+  }
 }
 
 @media screen and (min-device-width: 1200px) {
+  .hero-section {
+    .hero-text-container {
+      display: block;
+      height: auto;
+      padding-top: 5vh;
 
-    .hero-section {
+      .hero-text-sm {
+        display: none;
+      }
+      
+      .hero-text-l {
+        display: block;
+        font-size: 18vh;
+        line-height: 1.1;
+      }
 
-        .hero-text-container {
-            display: block;
-            height: auto; 
-            padding-top: 5vh;
-            .hero-text-sm {
-                display: none;
-            }
-            .hero-text-l { 
-                display: block;
-                font-size: 15vh;
-                line-height: 1.1;
-            }
-
-            h1 {
-                position: absolute;
-                right: 300px;
-                bottom: 0;
-                font-size: 24px; 
-            }
-        }
-    
+      h1 {
+        position: absolute;
+        right: 300px;
+        bottom: 0;
+        font-size: 24px;
+      }
     }
+  }
 }

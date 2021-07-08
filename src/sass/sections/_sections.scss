@@ -1,0 +1,62 @@
+//_______________________ SECTION
+.section {
+    width: 100vw;
+    background-color: $light-grey;
+  }
+  
+  .section__header {
+      font-family: $primary-font;
+      color: white;
+      font-size: 7vh;
+      padding-top: 72px;
+  }
+
+  .section__description {
+      font-family: $primary-font;
+      font-size: 28px;
+      margin: 0 0 18px 0;
+  }
+
+  .section__body {
+      display: flex;
+      flex-direction: column;
+  }
+  .section__text-container {
+      order: 2;
+      background-color: white;
+  }
+  .section__card-container {
+      order: 1;
+  }
+
+  .sm-section__text-container {
+      background-color:  white;
+      padding: 48px 0;
+      h4 {
+          line-height: 2;
+      }
+
+      p {
+          line-height: 1.5;
+      }
+  }
+
+  @media screen and (min-device-width: 1200px) {
+
+    .section__header {
+      font-size: 15vh; 
+      }
+
+      .section__body {
+        flex-direction: row;
+    }
+    .section__text-container {
+        flex: 1;
+        order: 1;
+        background-color: white;
+    }
+    .section__card-container {
+        felx: 1;
+        order: 2;
+    }
+  }

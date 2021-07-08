@@ -1,48 +1,16 @@
-
 @import "./base/base";
-@import "./sections/nav";
-@import "./sections/hero";
-@font-face {
-    font-family: OpenSans;
-    src: url('../fonts/OpenSans-Regular.ttf');
-}
-@font-face {
-    font-family: NeutralFace;
-    src: url('../fonts/NeutralFace.otf');
-}
+@import "./sections/index";
+@import "./components/index";
 
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: NeutralFace;
+  src: url("../fonts/NeutralFace.otf");
+}
 
 // ______________________________________ GLOBAL
-
-body {
-    position: relative;
-    box-sizing: border-box;
-    width: 100vw;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-}
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.container {
-  width: 90vw;
-  margin: 0 auto;
-}
-
-@media screen and (min-device-width: 1200px) {
-    .container {
-        max-width: 960px;
-      } 
-}
-@media screen and (min-device-width: 1440px) {
-    .container {
-        max-width: 1200px;
-      } 
-}
-
-
 
 
