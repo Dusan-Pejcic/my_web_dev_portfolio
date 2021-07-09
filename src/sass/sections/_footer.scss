@@ -1,0 +1,38 @@
+footer {
+    height: 100vh;
+    background-color: $dark-grey;
+    color: white;
+}
+
+.widget__container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget {
+    height: 200px;
+    width: 200px;
+    border: 1px dotted white; 
+}
+.dev-info {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;;
+}
+
+@media screen and (min-device-width: 1200px) {
+    footer {
+        height: 50vh;
+    }
+    .widget__container {
+        height: 50vh;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
