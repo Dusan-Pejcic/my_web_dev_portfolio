@@ -11,24 +11,28 @@
       font-family: $primary-font;
       color: white;
       font-size: 7vh;
-      padding-top: 72px;
+      padding-top: 24px;
   }
 
-  .section__description { //design, development, maintenance
+  .section__description-container {
+    margin-bottom: 24px;
+}
+
+  h3.section__description { //design, development, maintenance
       font-family: $primary-font;
-      font-size: 28px;   
+      font-size: 28px; 
+      font-weight: 100;
+      margin: 0;  
   }
 
-  .section__body {
+  .services-section__body {
       gap: 48px;
       width: 100%;
       display: flex;
       flex-direction: column;
   }
-  .section__container {
-      padding: 0;
-  }
-  .section__text-container {
+
+  .services-section__text-container {
       order: 2;
       background-color: white;
       h4 {
@@ -43,7 +47,7 @@
       order: 1;
   }
 // ______________ not displayed on a large viewport
-  .sm-section__text-container {
+  .sm-services-section__text-container {
       background-color:  white;
       padding: 48px 0;
       h4 {
@@ -65,25 +69,24 @@
     .section__description-container {
         padding: 48px 0 48px 0;
         border-top: 1px solid $dark-grey;
+        margin-bottom: 36px;
     }
 
     h3.section__description { //design, development, maintenance
-      font-family: $primary-font;
-      font-size: 28px;
-      margin-bottom: 0;
+      font-size: 36px;
       margin-top: 18px;
     }
     h3.section__description:nth-child(1) {
         margin-top: 0;
     }
 
-    .section__body {
+    .services-section__body {
         flex-direction: row;
     }
     .section__container {
         padding: 72px 150px 120px 150px;
     }
-    .section__text-container {
+    .services-section__text-container {
         flex: 1;
         order: 1;
         background-color: white;
