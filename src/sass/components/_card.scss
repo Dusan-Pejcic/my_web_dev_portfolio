@@ -7,11 +7,14 @@
 }
 .card {
     background-color: $dark-grey;
-    height: 60vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card__services {
+    height: 60vh;
 }
 .card li{
     color: white;
@@ -25,7 +28,8 @@
     }  
 }
 @media screen and (min-device-width: 1920px) {
-    .card {
+   
+    .card__services {
         height: 45vh;
-    }  
+    }
 }
