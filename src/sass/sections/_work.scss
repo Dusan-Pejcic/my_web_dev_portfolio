@@ -1,0 +1,57 @@
+.single-work__container {
+    
+    padding: 72px 150px 0 150px;
+}
+
+.work__wrap {
+    width: 100%;
+    
+    display: flex; 
+}
+
+.mockups__container {
+    height: 50vh;
+    flex: 2;
+}
+.work-images__container {
+    display: flex;
+    position: relative;
+    z-index: 5;
+    .mockup-img {
+       
+    }
+    .phone-mockup {
+        width: 180px;
+        height: 100%;
+
+        position: relative;
+        top: 60px;
+        z-index: 7;
+       
+    }
+    .tablet-mockup {
+        width: 550px;
+        height: 100%;
+
+        position: relative;
+        left: -100px;
+        z-index: 6;
+        
+    }
+}
+.work-description__container {
+    height: 50vh;
+    flex: 1;
+
+    height: 50vh;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ 
+@media screen and (min-device-width: 1200px) {
+      
+}

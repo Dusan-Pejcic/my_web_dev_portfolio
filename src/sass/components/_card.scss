@@ -22,6 +22,19 @@
     margin-bottom: 24px;
 }
 
+.card__work {
+    
+    padding: 48px 18px;
+    .card__ul {
+        .card__li-item {
+            margin-bottom: 18px; 
+        }
+    }
+    .card__valer-container {
+        height: 1vh;
+    }
+}
+
 @media screen and (min-device-width: 1200px) {
     .card {
         
