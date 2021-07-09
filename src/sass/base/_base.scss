@@ -29,6 +29,9 @@ body {
   font-family: $text-font;
   font-size: 16px;
 }
+p {
+  line-height: 1.8;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -38,6 +41,10 @@ ul {
 .container {
   width: 90vw;
   margin: 0 auto;
+}
+
+.inner-container {
+  padding: 0;
 }
 
 .container--white {
@@ -51,6 +58,10 @@ ul {
   }
   .container--white {
     background-color: white;
+  }
+
+  .inner-container {
+    padding: 72px 150px 72px 150px;
   }
 }
 @media screen and (min-device-width: 1440px) {
