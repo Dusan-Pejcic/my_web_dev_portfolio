@@ -1,9 +1,6 @@
 .work-section {
     padding-bottom: 0;
 }
-.single-work__container {
-    padding: 0;
-}
 
 .work__wrap {
     width: 100%;
@@ -21,7 +18,7 @@
 
     .mockup-img {
 
-        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
     }
     .phone-mockup {
         width: 110px;
@@ -51,9 +48,7 @@
     .work-section {
         padding-bottom: 120px;
     }
-    .single-work__container {
-        padding: 72px 150px 0 150px;
-    }
+
     .work__wrap {
         display: flex; 
     } 
