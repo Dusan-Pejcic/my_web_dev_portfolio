@@ -77,16 +77,21 @@
 }    
 // __________________________________ large viewport menu
    
-.nav-item {
+.nav-item a {
     color: white;
     padding: 0 40px;
     font-family: OpenSans;
     font-size: 22px;
-    font-variant: small-caps;   
-}    
+    font-variant: small-caps; 
+    text-decoration: none;  
+} 
+.nav-item:last-child a {
+    padding-right: 0;
+}   
 
 .large-menu-container {
     height: 100%;
+    margin: 0 auto;
 }
 
 .large-menu {
