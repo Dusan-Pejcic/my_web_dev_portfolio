@@ -50,7 +50,7 @@
     }
 
     .work__wrap {
-        display: flex; 
+        display: flex;
     } 
 
     .mockups__container {
@@ -61,21 +61,19 @@
     .work-images__container {
 
         .phone-mockup {
-            width: 180px;
+            width: 160px;
             top: 60px; 
         }
         .tablet-mockup {
-            width: 550px;
+            width: 500px;
             left: -100px;   
         }
     }
 
     .work-description__container {
         height: 50vh;
-        flex: 1;
-        height: 50vh;
-        flex: 1;
         display: flex;
+        flex: 1;
         align-items: flex-end;
         flex-direction: column;
         justify-content: center;

@@ -35,6 +35,10 @@
       font-weight: 100;
       margin: 0;  
   }
+  h4.section__description {
+      font-weight: 100;
+      margin: 12px 0 0 0;
+  }
 
   @media screen and (min-device-width: 1200px) {
 
@@ -58,7 +62,7 @@
     }
 
     h3.section__description { //design, development, maintenance
-      font-size: 36px;
+      font-size: 48px;
       margin-top: 18px;
     }
     h3.section__description:nth-child(1) {

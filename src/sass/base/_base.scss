@@ -64,7 +64,9 @@ ul {
   }
 
   .inner-container {
-    padding: 72px 150px 72px 150px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 72px 0;
   }
 }
 @media screen and (min-device-width: 1440px) {
