@@ -1,1 +1,1 @@
-(()=>{"use strict";var e;console.log("Webpack Boilerplate"),e=document.querySelector(".hero-text-container").clientWidth,document.querySelector(".large-menu-container").style.width="".concat(e,"px")})();
+(()=>{"use strict";var e,t;console.log("Webpack Boilerplate"),t=document.querySelector(".hero-text-container").clientWidth,e=t,document.querySelectorAll(".large-menu-container").forEach((function(t){t.style.width="".concat(e,"px")}))})();

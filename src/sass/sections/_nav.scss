@@ -40,7 +40,32 @@
     .color-field:nth-child(8) {
         background-color: #406EEF;
     }
-    
+
+    // ___________________________________ hamburger menu
+    .menu-icon-container {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 24px;
+        left: 0;
+        z-index: 20;
+    }
+    .icon__flex-container {
+       display: flex;
+       justify-content: flex-end;
+    }
+    .icon__container {
+        background-color: $blue;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 30px;
+            height: auto;
+        }
+    }
 
     // __________________________________ small viewport menu
 

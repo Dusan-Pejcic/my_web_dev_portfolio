@@ -7,8 +7,8 @@ export const alignNavAndText = ()=> {
     }
     const width = getNavWidth();
     const setNavWidth = (number)=> {
-        const largeMenuContainer = document.querySelector(".large-menu-container");
-        largeMenuContainer.style.width = `${number}px`;
+        const largeMenuContainer = document.querySelectorAll(".large-menu-container");
+        largeMenuContainer.forEach((element) => { element.style.width = `${number}px`; })    
     }
     setNavWidth(width);
 }

@@ -1,7 +1,9 @@
 @import "variables";
 
 //_______________________________ UTILITIES
-
+body {
+  position: relative;
+}
 .sm-display-none {
     display: none;
 }
