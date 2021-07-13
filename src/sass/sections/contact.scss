@@ -11,6 +11,9 @@
         margin: 0;
     }
 }
+.contact-form__container {
+    padding-top: 48px;
+}
 @media screen and (min-device-width: 1200px) {
     .contact-section__text-and-form-container {
         display: flex;
@@ -23,6 +26,7 @@
     
     .contact-form__container {
         flex: 1;
+        padding-top: 0;
     }
 
 }

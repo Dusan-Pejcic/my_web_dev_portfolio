@@ -6,6 +6,7 @@
     bottom: 0;
 }
 .card {
+    padding-top: 48px;
     background-color: $dark-grey;
     position: relative;
     display: flex;
@@ -27,7 +28,7 @@ ul.card__ul{
 }
 
 .card__work {
-    height: 100vw;
+    height: 80vw;
     .card__ul {
         list-style: none;
         .card__li-item {

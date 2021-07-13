@@ -46,7 +46,12 @@ body {
 }
 
 p, h4 {
-  line-height: 1.8;
+  line-height: 1.6;
+}
+@media screen and (min-device-width: 1200px) {
+  p, h4 {
+    line-height: 1.8;
+  }
 }
 ul {
   list-style: none;
@@ -60,7 +65,7 @@ ul {
 }
 
 .inner-container {
-  padding: 0;
+  padding: 48px 0 0 0;
 }
 
 .container--white {
