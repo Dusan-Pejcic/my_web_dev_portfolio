@@ -42,6 +42,25 @@
     height: 50vh;
     flex: 1;
 }
+//__________________________ link to work
+
+.link-to-work {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $blue;
+    font-family: $text-font;
+    font-weight: bold;
+    font-variant: small-caps;
+    span {
+        padding: 0 10px;
+    }
+}
+.work-link-arrow {
+    width: 30px;
+    height: auto;
+}
 
  
 @media screen and (min-device-width: 1200px) {

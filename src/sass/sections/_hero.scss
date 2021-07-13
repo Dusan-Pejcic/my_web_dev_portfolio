@@ -3,11 +3,12 @@
   .hero-text-container {
     position: relative;
     width: 90vw;
-    height: 100vh;
+    height: 90vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 10vh;
 
     .hero-text {
       font-family: $primary-font;

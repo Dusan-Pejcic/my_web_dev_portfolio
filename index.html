@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./dist/bundle.css">
 </head>
 <body>  
-    <header>
+    <header id="home">
         <nav class="nav-container">
             <div class="valer-container">
                 <div class="color-field"></div>
@@ -34,7 +34,7 @@
 
         </nav>
 
-        <div id="home" class="hero-section">
+        <div class="hero-section">
             <div class="hero-text-container">
 
                 <p class="hero-text hero-text-l">
@@ -57,7 +57,21 @@
             </div> 
         </div>
     </header>
+<!-- ____________________________________________ small viewport menu icon -->
+<div class="small-viewport__menu-button-container">
+    <div class="container">
+        <div class="icon__flex-container">
+            <div class="small-icon__container">
+                <img src="./src/images/menu-button.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+ 
+
+<!-- _______________________________________________ sliding menu_______ -->
     <div class="sm-menu">
+<!-- _______________________________________________ close button -->
         <div class="close-button__container">
             <div class="center-div__container">
                 <div class="close-button__wrapper">
@@ -65,6 +79,8 @@
                 </div>
             </div>
         </div>
+<!-- ________________________________________________ close button END -->
+
         <ul>
             <li class="open-menu-link"><a href="#home">home</a></li>
             <li class="open-menu-link"><a href="#services">services</a></li>
@@ -75,8 +91,8 @@
     </div>
 
     <main>
-        <!-- _____________________________________ menu icon -->
-        <div class="menu-icon-container">
+<!-- ____________________________________________ large viewport menu icon -->
+        <div class="menu-icon-container large-viewport-menu-icon">
             <div class="large-menu-container">
                 <div class="icon__flex-container">
                     <div class="icon__container">
@@ -204,8 +220,10 @@
                                         </div>
                                     </div>
                                     <div class="link__container">
-                                        <a href="">Visit Site</a>
-                                        <i class="fas fa-arrow-right"></i>
+                                        <a class="link-to-work" href=""><span>visit site</span>
+                                            <img class="work-link-arrow" src="../src/images/right-arrow.svg" alt="">
+
+                                        </a>
                                     </div>
                                 </div>
                             </div>

@@ -16,11 +16,15 @@ export const navMenuOnScroll = ()=> {
 
 export const clickMenu = ()=> {
     const button = document.querySelector('.icon__container');
+    const smallViewportButton = document.querySelector('.small-icon__container');
     const closeButton = document.querySelector('.close-button');
     const menu = document.querySelector('.sm-menu');
     const openMenuLinks = document.querySelectorAll('.open-menu-link');
 
     button.addEventListener('click', ()=> {
+        menu.classList.add("clicked");
+    })
+    smallViewportButton.addEventListener('click', ()=> {
         menu.classList.add("clicked");
     })
     closeButton.addEventListener('click', ()=> {

@@ -41,7 +41,16 @@
         background-color: #406EEF;
     }
 
-    // ___________________________________ hamburger menu
+    // ____________________________________small viewport menu button
+
+    .small-viewport__menu-button-container {
+        display: block;
+        position: fixed;
+        top: 36px;
+        width: 100vw;
+        z-index: 30;
+    }
+    
     .menu-icon-container {
         position: sticky;
         top: 24px;
@@ -51,7 +60,7 @@
        display: flex;
        justify-content: flex-end;
     }
-    .icon__container {
+    .icon__container, .small-icon__container {
         background-color: $blue;
         width: 50px;
         height: 50px;
@@ -59,16 +68,36 @@
         align-items: center;
         justify-content: center;
 
-        opacity: 0;
+        opacity: 1;
         transition: .4s;
         img {
             width: 30px;
             height: auto;
         }
     }
-    .icon__container--visable {
-        opacity: 1;
+    // ___________________________________large  menu button
+    .large-viewport-menu-icon {
+        display: none;
     }
+
+    @media screen and (min-device-width: 1200px) {
+
+        .small-viewport__menu-button-container {
+            display: none;
+        }
+
+        .large-viewport-menu-icon {
+            display: block;
+        }
+        .icon__container {
+            opacity: 0;
+        }
+
+        .icon__container--visable {
+            opacity: 1;
+        }
+    }
+    
 
     // __________________________________ small viewport menu
 
@@ -116,6 +145,8 @@
     justify-content: flex-end;
 }
 .close-button {
+    padding: 10px 10px 0 0;
+    
     width: 30px;
     height: auto;
 }
@@ -149,9 +180,7 @@
     .nav-container {
         height: 5vh;
     }
-    .sm-menu {
-        /* display: none; */
-    }
+
     .large-menu {
         height: 100%;
         margin: 0;
@@ -159,6 +188,10 @@
         justify-content: flex-end;
         align-items: center;
 
+    }
+    //____________________ slide nav
+    .close-button {
+        padding: 0 10px 0 0;
     }
 }
     
