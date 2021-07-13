@@ -8,7 +8,10 @@ export const alignNavAndText = ()=> {
     const width = getNavWidth();
     const setNavWidth = (number)=> {
         const largeMenuContainer = document.querySelectorAll(".large-menu-container");
+        // 
+        const closeIconButtonWrapper = document.querySelector(".close-button__wrapper");
         largeMenuContainer.forEach((element) => { element.style.width = `${number}px`; })    
+        closeIconButtonWrapper.style.width = `${number}px`;   
     }
     setNavWidth(width);
 }
