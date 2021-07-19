@@ -404,11 +404,11 @@
                            </div> 
 
                             <div class="contact-form__container">
-                                <form class="contact-form" action="">
+                                <form class="contact-form" action="https://formsubmit.co/dushan.pejcic@googlemail.com" method="POST">
                                     <label for="email">Your email</label>
-                                    <input name="email" type="text"> 
+                                    <input name="email" type="text" required> 
                                     <label for="message">Your message</label>
-                                    <input name="message" type="text-area">
+                                    <input name="message" type="text-area" required>
                                     <input value="Send" type="submit"> 
                                 </form>
                             </div>
@@ -426,11 +426,40 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="large-menu-container"> <!-- is the name of the container that I have used to calculate the width od the container based on the width of the hero section content. i have just reused the same class here in the footer. Otherwise, here in the footer, the name of the container has nothing to do with the large menu  -->
             <div class="widget__container">
-                <div class="widget">impressum</div>
-                <div class="widget">faqs</div>
-                <div class="widget">links</div>
+
+                <div class="widget">
+                    <p>Dusan Pejcic</p>
+                    <p>Seelingstr. 12</p>
+                    <p>14059 Berlin, Germany</p>
+                    <a href="mailto: dushan.pejcic@googlemail.com">dushan.pejcic@googlemail.com</a>
+                    <a href="tel: 00491776246931">+49 177 6246 931</a>
+                </div>
+
+                <div class="widget">
+                    <a href="" class="impressum-link">impressum</a>
+                </div>
+
+                <div class="widget">
+                    <a href="" class="impressum-link">faq</a>
+                </div>
+
+                <div class="widget">
+                    <div class="social-links-container">
+                        <a href="" class="social-link">
+                            <img src="./src/images/github.svg" alt="" class="widget-social-img">
+                        </a>
+    
+                        <a href="" class="social-link">
+                            <img src="./src/images/behance.svg" alt="" class="widget-social-img">
+                        </a>
+    
+                        <a href="" class="social-link">
+                            <img src="./src/images/facebook.svg" alt="" class="widget-social-img">
+                        </a>
+                    </div>
+                </div>
                 <p class="dev-info">Developed by Dusan Pejcic, &copy; 2020</p>
                 
             </div>
