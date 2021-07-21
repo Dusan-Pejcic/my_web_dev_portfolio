@@ -4,15 +4,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 
 export const heroSectionTextAnimation = ()=> {
-
+/* _________________________ hero text animation */
     const heroTextL = gsap.timeline({ defaults: {duration: .4,
-        y: -50,
         opacity: 0,
         stagger: 0.05,
         ease:Power4.easeOut,} });
 
     heroTextL.from('.first-row', {
-        
+
     }).from('.second-row', {
         
     }, '-=.7' ).from('.third-row', {
@@ -30,6 +29,8 @@ export const heroSectionTextAnimation = ()=> {
 
 export const scrollAimations = ()=> {
 /* ____________________ services section fade in */
+
+
     const greyBg = gsap.timeline({defaults: {
         duration: .4,
         opacity: 0,
@@ -37,18 +38,43 @@ export const scrollAimations = ()=> {
     }});
 
     greyBg.from('main', {})
-    .from('.section__header--grey', {}, 0)
-    .from('.first-section__header', {
-        y: 100  
-    }).from('.container--white', {
-        y:100
-    }, '-=.3')
+        /* .from('.section__header--grey', {}, 0) */
+        .from('.first-section__header', {
+            y: 100  
+            });
 
     ScrollTrigger.create({
         animation: greyBg,
         trigger: ".first-section__header",
         start: 'top 80%',
         end: "+=500"
+    })
+    /* ______________________________ container white */
+
+    const whiteContainers = document.querySelectorAll('.container--white');
+    whiteContainers.forEach((container)=> {
+        gsap.from(container, {
+            opacity: 0,
+            y:100,
+           scrollTrigger: {
+              trigger: container,
+              start: "top 80%", 
+              /* markers: true */
+           }
+        })
+    });
+
+    /* _____________________________ section headers */
+    const sectionHeaders= document.querySelectorAll('.section__header');
+    sectionHeaders.forEach((header)=> {
+        gsap.from(header, {
+            opacity: 0,
+            y:100,
+            scrollTrigger: {
+                trigger: header,
+                strat: 'top 80%'
+            } 
+        })
     })
     /* _____________________________ cardServices fade in */
 
@@ -69,4 +95,29 @@ export const scrollAimations = ()=> {
         start: 'top 80%',
         end: "+=500"
     })
+
+    /* ___________________________ work section */
+    const works = document.querySelectorAll('.single-work-container');
+    works.forEach((work)=>{
+      const phoneMockup = work.querySelector('.phone-mockup');
+      const tabletMockup = work.querySelector('.tablet-mockup');
+      const cardWork = work.querySelector('.card__work');
+
+      const mockupsAnim = gsap.timeline({defaults: {
+        duration: .4,
+        opacity: 0,
+        ease:Power4.easeOut,    
+    }});
+      mockupsAnim.from(phoneMockup, {y:100})
+      .from(tabletMockup,{y:100})
+      .from(cardWork, {})
+
+      ScrollTrigger.create({
+        animation: mockupsAnim,
+        trigger: work,
+        start: 'top 70%'
+    })
+    })
+    
+
 }
