@@ -30,7 +30,7 @@
     }
 
 }
-
+/* _______________________________ contact form */
 .contact-form {
     label, input {
         display: block;
@@ -54,5 +54,10 @@
         border: none;
         color: white;
         font-weight: bold;
+        transition: .2s;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: $pink;
     }
 }

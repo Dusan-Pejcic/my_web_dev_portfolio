@@ -38,7 +38,6 @@ export const scrollAimations = ()=> {
     }});
 
     greyBg.from('main', {})
-        /* .from('.section__header--grey', {}, 0) */
         .from('.first-section__header', {
             y: 100  
             });
@@ -59,7 +58,6 @@ export const scrollAimations = ()=> {
            scrollTrigger: {
               trigger: container,
               start: "top 80%", 
-              /* markers: true */
            }
         })
     });
