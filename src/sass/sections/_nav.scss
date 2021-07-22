@@ -54,10 +54,10 @@
     .menu-icon-container {
         position: sticky;
         top: 24px;
-        right: 24px;
         z-index: 20;
     }
     .icon__flex-container {
+        width: 100%;
        display: flex;
        justify-content: flex-end;
     }
@@ -114,6 +114,7 @@
 
 .sm-menu {
     margin-top: 0;
+    padding-left: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -137,9 +138,22 @@
             color: $white;
             font-family: $primary-font;
             font-size: 48px;
-            padding-left: 24px;
+            
         }
     }
+  }
+
+  @media screen and (min-device-width: 1200px) {
+    .sm-menu {
+        li { margin-bottom: 0;
+            a {
+                font-size: 15vh;
+                font-weight: bold;
+                padding-left: 0;
+            }
+        }
+    }
+
   }
   .close-button__container {
       position:absolute;
@@ -187,13 +201,6 @@
 }
 
 @media screen and (min-device-width: 1200px) {
-    .sm {
-        li {
-            a {
-                padding-left: 120px;
-            }
-        }
-    }
     .nav-container {
         height: 5vh;
     }
@@ -208,7 +215,7 @@
     }
     //____________________ slide nav
     .close-button {
-        padding: 0 10px 0 0;
+        padding: 0 30px 0 0;
     }
 }
     
