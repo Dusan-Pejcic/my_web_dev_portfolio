@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export const heroSectionTextAnimation = ()=> {
 /* _________________________ hero text animation */
-    const heroTextL = gsap.timeline({ defaults: {duration: .4,
+    const heroTextL = gsap.timeline({ defaults: {duration: .6,
         opacity: 0,
         stagger: 0.05,
         ease:Power4.easeOut,} });
@@ -19,7 +19,7 @@ export const heroSectionTextAnimation = ()=> {
     }, '-=.7').from('.fourth-row', {
         
     }, '-=.7').from('.color-field', {
-        duration: .4,
+        duration: .6,
         y: -200,
         stagger: .07,
         ease:Power4.easeOut,
@@ -32,7 +32,7 @@ export const scrollAimations = ()=> {
 
 
     const greyBg = gsap.timeline({defaults: {
-        duration: .4,
+        duration: .6,
         opacity: 0,
         ease:Power4.easeOut,
     }});
@@ -79,7 +79,7 @@ export const scrollAimations = ()=> {
     /* _____________________________ cardServices fade in */
 
     const cardServices = gsap.timeline({defaults: {
-        duration: .4,
+        duration: .6,
         opacity: 0,
         ease:Power4.easeOut,    
     }})
@@ -104,19 +104,34 @@ export const scrollAimations = ()=> {
       const cardWork = work.querySelector('.card__work');
 
       const mockupsAnim = gsap.timeline({defaults: {
-        duration: .4,
+        duration: .6,
         opacity: 0,
         ease:Power4.easeOut,    
     }});
       mockupsAnim.from(phoneMockup, {y:100})
       .from(tabletMockup,{y:100})
-      .from(cardWork, {})
+      .from(cardWork, {y:100})
 
       ScrollTrigger.create({
         animation: mockupsAnim,
         trigger: work,
         start: 'top 70%'
     })
+    })
+
+    /* ____________________ form */
+
+    const form = document.querySelector('.contact-form');
+    
+    gsap.from('.contact-form__container', { 
+        duration: .6,
+        opacity: 0,
+        y: 100,
+        ease:Power4.easeOut, 
+        scrollTrigger: {
+            trigger: form,
+            start: 'top 70%',
+        }
     })
     
 
