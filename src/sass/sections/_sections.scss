@@ -4,6 +4,7 @@
     }
 .section--grey {
     width: 100vw;
+    max-width: 100%;
     background-color: white;
 }
 .last-grey-section {
@@ -11,6 +12,7 @@
 }
 .section__header--grey {
     width: 100vw;
+    max-width: 100%;
     background-color: $light-grey;
 }
 

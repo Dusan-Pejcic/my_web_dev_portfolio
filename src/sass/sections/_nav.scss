@@ -1,6 +1,7 @@
 
 .nav-container {
     width: 100vw;
+    max-width: 100%;
     height: 2vh;
     position: relative;
 }
@@ -48,6 +49,7 @@
         position: fixed;
         top: 0;
         width: 100vw;
+        max-width: 100%;
         z-index: 30;
     }
     
@@ -57,7 +59,7 @@
         z-index: 20;
     }
     .icon__flex-container {
-        width: 100%;
+        max-width: 100%;
        display: flex;
        justify-content: flex-end;
     }
@@ -127,6 +129,7 @@
     
     height: 100vh;
     width: 100vw;
+    max-width: 100%;
     margin-left: -100vw;
     background-color: $light-grey;
     transition: .4s;
@@ -161,6 +164,7 @@
   }
   .center-div__container {
       width: 100vw;
+      max-width: 100%;
   }
   .close-button__wrapper {
     margin: 0 auto;
