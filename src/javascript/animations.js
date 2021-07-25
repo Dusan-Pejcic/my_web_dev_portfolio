@@ -3,6 +3,15 @@ import { gsap, Power4 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 
+export const colorFieldsAnimation = ()=> {
+    gsap.from('.color-field', {
+        duration: .6,
+        y: -200,
+        stagger: .07,
+        ease:Power4.easeOut,
+    }, -.1)
+}
+
 export const heroSectionTextAnimation = ()=> {
 /* _________________________ hero text animation */
     const heroTextL = gsap.timeline({ defaults: {duration: .6,
@@ -18,13 +27,7 @@ export const heroSectionTextAnimation = ()=> {
         
     }, '-=.7').from('.fourth-row', {
         
-    }, '-=.7').from('.color-field', {
-        duration: .6,
-        y: -200,
-        stagger: .07,
-        ease:Power4.easeOut,
-    }, -.1)
-
+    }, '-=.7')
 }
 
 export const scrollAimations = ()=> {

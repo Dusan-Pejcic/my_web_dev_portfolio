@@ -185,9 +185,9 @@
    
 .nav-item a {
     color: white;
-    padding: 0 40px;
+    padding: 0 30px;
     font-family: OpenSans;
-    font-size: 22px;
+    font-size: 18px;
     font-variant: small-caps; 
     text-decoration: none;  
 } 
@@ -207,7 +207,7 @@
 
 @media screen and (min-device-width: 1200px) {
     .nav-container {
-        height: 5vh;
+        height: 3vh;
     }
 
     .large-menu {
