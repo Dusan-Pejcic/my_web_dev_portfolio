@@ -1,4 +1,4 @@
-
+/* all these are obsolete */
 export const alignNavAndText = ()=> {
     const getNavWidth = ()=> {
         const heroTextContainer = document.querySelector('.hero-text-container');

@@ -1,12 +1,12 @@
 import '../sass/styles.scss';
 /* import { getNavWidth, setNavWidth } from "./hero"; */
-import { alignNavAndText } from "./hero";
+/* import { alignNavAndText } from "./hero"; */
 import { clickMenu, navMenuOnScroll } from "./nav";
 import { heroSectionTextAnimation } from "./animations";
 import { scrollAimations } from "./animations";
 
 console.log('Webpack Boilerplate');
-alignNavAndText();
+/* alignNavAndText(); */
 clickMenu();
 navMenuOnScroll();
 /*  animations  */
