@@ -10,7 +10,15 @@ console.log('Webpack Boilerplate');
 clickMenu();
 navMenuOnScroll();
 /*  animations  */
-heroSectionTextAnimation();
+
+/* to run only if hero section is present */
+const heroTextContainer = document.querySelector('.hero-text-container'); 
+const heroText = document.querySelector('body').contains(heroTextContainer);
+
+if(heroText){
+    heroSectionTextAnimation();
+}
+
 scrollAimations();
 const fn = () => console.log("Check out bundle.js, this ES6 arrow function was transformed to classic function for older browser support!")
 

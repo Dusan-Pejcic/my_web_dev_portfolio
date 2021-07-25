@@ -29,28 +29,33 @@ export const heroSectionTextAnimation = ()=> {
 
 export const scrollAimations = ()=> {
 /* ____________________ services section fade in */
+const firstSectionHeader = document.querySelector('.first-section__header'); 
+const firstSectionHeaderIsPresent = document.querySelector('body').contains(firstSectionHeader);
 
-
+if(firstSectionHeaderIsPresent){
     const greyBg = gsap.timeline({defaults: {
         duration: .6,
         opacity: 0,
         ease:Power4.easeOut,
     }});
-
+    
     greyBg.from('main', {})
         .from('.first-section__header', {
             y: 100  
             });
-
+    
     ScrollTrigger.create({
         animation: greyBg,
         trigger: ".first-section__header",
         start: 'top 80%',
         end: "+=500"
-    })
+    })  
+}
+
     /* ______________________________ container white */
 
     const whiteContainers = document.querySelectorAll('.container--white');
+    
     whiteContainers.forEach((container)=> {
         gsap.from(container, {
             opacity: 0,
@@ -64,6 +69,7 @@ export const scrollAimations = ()=> {
 
     /* _____________________________ section headers */
     const sectionHeaders= document.querySelectorAll('.section__header');
+
     sectionHeaders.forEach((header)=> {
         gsap.from(header, {
             opacity: 0,
@@ -76,23 +82,30 @@ export const scrollAimations = ()=> {
     })
     /* _____________________________ cardServices fade in */
 
-    const cardServices = gsap.timeline({defaults: {
-        duration: .6,
-        opacity: 0,
-        ease:Power4.easeOut,    
-    }})
+    const cardServices = document.querySelector('.card__services'); 
+    const cardServicesIsPresent = document.querySelector('body').contains(cardServices);
 
-    cardServices.from('.card__services', {y:100})
-    .from('.services__li-item',{
-        y:20,
-        stagger: .06} )
+    if(cardServicesIsPresent){
+
+        const cardServices = gsap.timeline({defaults: {
+            duration: .6,
+            opacity: 0,
+            ease:Power4.easeOut,    
+        }})
     
-    ScrollTrigger.create({
-        animation: cardServices,
-        trigger: ".section__card-container",
-        start: 'top 80%',
-        end: "+=500"
-    })
+        cardServices.from('.card__services', {y:100})
+        .from('.services__li-item',{
+            y:20,
+            stagger: .06} )
+        
+        ScrollTrigger.create({
+            animation: cardServices,
+            trigger: ".section__card-container",
+            start: 'top 80%',
+            end: "+=500"
+        })
+    }
+
 
     /* ___________________________ work section */
     const works = document.querySelectorAll('.single-work-container');
@@ -119,18 +132,22 @@ export const scrollAimations = ()=> {
 
     /* ____________________ form */
 
-    const form = document.querySelector('.contact-form');
+    const form = document.querySelector('.contact-form'); 
+    const formIsPresent = document.querySelector('body').contains(form);
+    if(formIsPresent){
+        gsap.from('.contact-form__container', { 
+            duration: .6,
+            opacity: 0,
+            y: 100,
+            ease:Power4.easeOut, 
+            scrollTrigger: {
+                trigger: form,
+                start: 'top 70%',
+            }
+        })
+    }
     
-    gsap.from('.contact-form__container', { 
-        duration: .6,
-        opacity: 0,
-        y: 100,
-        ease:Power4.easeOut, 
-        scrollTrigger: {
-            trigger: form,
-            start: 'top 70%',
-        }
-    })
+    
     
 
 }
