@@ -107,32 +107,32 @@ if(firstSectionHeaderIsPresent){
             start: 'top 80%',
             end: "+=500"
         })
-    }
+    
 
 
     /* ___________________________ work section */
-    const works = document.querySelectorAll('.single-work-container');
-    works.forEach((work)=>{
-      const phoneMockup = work.querySelector('.phone-mockup');
-      const tabletMockup = work.querySelector('.tablet-mockup');
-      const cardWork = work.querySelector('.card__work');
+        const works = document.querySelectorAll('.single-work-container');
+        works.forEach((work)=>{
+            const phoneMockup = work.querySelector('.phone-mockup');
+            const tabletMockup = work.querySelector('.tablet-mockup');
+            const cardWork = work.querySelector('.card__work');
 
-      const mockupsAnim = gsap.timeline({defaults: {
-        duration: .6,
-        opacity: 0,
-        ease:Power4.easeOut,    
-    }});
-      mockupsAnim.from(phoneMockup, {y:100})
-      .from(tabletMockup,{y:100})
-      .from(cardWork, {y:100})
+            const mockupsAnim = gsap.timeline({defaults: {
+                duration: .6,
+                opacity: 0,
+                ease:Power4.easeOut,    
+            }});
+            mockupsAnim.from(phoneMockup, {y:100})
+            .from(tabletMockup,{y:100})
+            .from(cardWork, {y:100})
 
-      ScrollTrigger.create({
-        animation: mockupsAnim,
-        trigger: work,
-        start: 'top 70%'
-    })
-    })
-
+            ScrollTrigger.create({
+                animation: mockupsAnim,
+                trigger: work,
+                start: 'top 70%'
+            })
+        })
+    }
     /* ____________________ form */
 
     const form = document.querySelector('.contact-form'); 
