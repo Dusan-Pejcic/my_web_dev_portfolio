@@ -150,7 +150,30 @@ if(firstSectionHeaderIsPresent){
         })
     }
     
-    
-    
+}
+
+export const faqPageAnimations = ()=> {
+
+    const faqContainers = document.querySelectorAll('.faq-container');
+
+    faqContainers.forEach((faqContainer)=> {
+        const whiteFieldText = faqContainer.querySelectorAll('.faq-question');
+        const blackFieldText = faqContainer.querySelectorAll('.faq-answer');
+
+        const faqText = gsap.timeline({defaults: {
+            duration: .6,
+            opacity: 0,
+            ease:Power4.easeOut    
+        }})
+
+        faqText.from(whiteFieldText,{y:100})
+        .from(blackFieldText, {y:100},'-=.4')
+
+        ScrollTrigger.create({
+            animation: faqText,
+            trigger: faqContainer,
+            start: 'top 70%'
+        })
+    })
 
 }

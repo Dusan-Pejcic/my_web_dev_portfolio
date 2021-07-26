@@ -36,12 +36,3 @@ export const clickMenu = ()=> {
         })  
     })
 }
-
-/* background color of the nav on the faq page */
-
-/* const faqSection = document.querySelector('#faq-section'); 
-const faqSectionIsPresent = document.querySelector('body').contains(faqSection);
-
-if(faqSectionIsPresent) {
-
-} */
