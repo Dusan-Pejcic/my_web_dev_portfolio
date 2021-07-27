@@ -13,7 +13,7 @@ export const colorFieldsAnimation = ()=> {
 }
 
 export const heroSectionTextAnimation = ()=> {
-/* _________________________ hero text animation */
+/* ______________________________________________lg hero text animation */
     const heroTextL = gsap.timeline({ defaults: {duration: .6,
         opacity: 0,
         stagger: 0.05,
@@ -21,13 +21,36 @@ export const heroSectionTextAnimation = ()=> {
 
     heroTextL.from('.first-row', {
 
-    }).from('.second-row', {
-        
-    }, '-=.7' ).from('.third-row', {
-        
-    }, '-=.7').from('.fourth-row', {
-        
-    }, '-=.7')
+        }).from('.second-row', {
+            
+        }, '-=.7' ).from('.third-row', {
+            
+        }, '-=.7').from('.fourth-row', {
+            
+        }, '-=.7')
+}
+
+export const smHeroTextAnimation = ()=> {
+    const smHeroTextL = gsap.timeline({ defaults: {duration: .6,
+        opacity: 0,
+        stagger: 0.05,
+        ease:Power4.easeOut,} });
+
+    smHeroTextL.from('.sm-first-row', {
+
+        }).from('.sm-second-row', {
+            
+        }, '-=.7' ).from('.sm-third-row', {
+            
+        }, '-=.7').from('.sm-fourth-row', {
+            
+        }, '-=.7').from('.sm-fifth-row', {
+            
+        }, '-=.7').from('.sm-sixth-row', {
+            
+        }, '-=.7').from('.sm-seventh-row', {
+            
+        }, '-=.7')
 }
 
 export const scrollAimations = ()=> {
@@ -151,6 +174,8 @@ if(firstSectionHeaderIsPresent){
     }
     
 }
+
+/* ___________________________________ FAQ page */
 
 export const faqPageAnimations = ()=> {
 
