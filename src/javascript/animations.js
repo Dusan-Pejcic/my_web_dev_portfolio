@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 
 export const colorFieldsAnimation = ()=> {
-    gsap.from('.color-field', {
+    gsap.from('.nav-container .valer-container .color-field', {
         duration: .6,
         y: -200,
         stagger: .07,
@@ -127,7 +127,7 @@ if(firstSectionHeaderIsPresent){
         ScrollTrigger.create({
             animation: cardServices,
             trigger: ".section__card-container",
-            start: 'top 80%',
+            start: 'top bottom',
             end: "+=500"
         })
     
@@ -146,13 +146,13 @@ if(firstSectionHeaderIsPresent){
                 ease:Power4.easeOut,    
             }});
             mockupsAnim.from(phoneMockup, {y:100})
-            .from(tabletMockup,{y:100})
-            .from(cardWork, {y:100})
+            .from(tabletMockup,{y:100}, '-=.3')
+            .from(cardWork, {y:100}, '-=.5')
 
             ScrollTrigger.create({
                 animation: mockupsAnim,
                 trigger: work,
-                start: 'top 70%'
+                start: 'top 40%'
             })
         })
     }
@@ -168,7 +168,7 @@ if(firstSectionHeaderIsPresent){
             ease:Power4.easeOut, 
             scrollTrigger: {
                 trigger: form,
-                start: 'top 70%',
+                start: 'top bottom',
             }
         })
     }
