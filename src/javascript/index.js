@@ -13,11 +13,12 @@ console.log('Webpack Boilerplate');
 colorFieldsAnimation();
 clickMenu();
 navMenuOnScroll();
-/*  animations  */
+/*  _____________________________________________________ANIMATIONS  */
 
-/* to run only if hero section is present */
+/* ______________________________________________________to run only if hero section is present */
 const heroTextContainer = document.querySelector('.hero-text-container'); 
 const heroText = document.querySelector('body').contains(heroTextContainer);
+
 if(heroText){
     function myFunction(x) {
         if (x.matches) { // If media query matches
@@ -30,10 +31,7 @@ if(heroText){
     myFunction(x) // Call listener function at run time
 }
 
-
-
-
-/* run only if FAQ page */
+/* _______________________________________________________run only if FAQ page */
 
 const faqSection = document.querySelector('#faq-section'); 
 const faqSectionIsPresent = document.querySelector('body').contains(faqSection);
@@ -43,7 +41,7 @@ if(faqSectionIsPresent) {
 }
 
 scrollAimations();
-const fn = () => console.log("Check out bundle.js, this ES6 arrow function was transformed to classic function for older browser support!")
+
 
 
  
