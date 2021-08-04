@@ -1,6 +1,6 @@
 @import "./base/base";
 @import "./sections/index";
-@import "./components/index";
+@import "./components/index"; 
 @import "./pages/faq";
 
 
@@ -14,10 +14,18 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
   src: url("../fonts/OpenSans-Regular.ttf");
 }
 @font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+@font-face {
   font-family: NeutralFace;
   src: url("../fonts/NeutralFace.otf");
+
 }
 
 // ______________________________________ GLOBAL
-
 

@@ -7,6 +7,8 @@ import { scrollAimations } from "./animations";
 import { colorFieldsAnimation } from "./animations";
 import { faqPageAnimations } from "./animations";
 import { smHeroTextAnimation } from "./animations";
+/* ______________________ set width of phone mockups */
+import { setHeightOfThePhoneMockup } from "./phone-mockup";
 
 console.log('Webpack Boilerplate');
 /* alignNavAndText(); */
@@ -41,6 +43,18 @@ if(faqSectionIsPresent) {
 }
 
 scrollAimations();
+
+/* _____________________________height of phone mockup */
+
+
+
+const runOnlyOnLargeViewports = (x)=> {
+    if (x.matches) {
+        setHeightOfThePhoneMockup();
+    }
+}
+var x = window.matchMedia("(min-width: 700px)")
+runOnlyOnLargeViewports(x) // Call listener function at run time
 
 
 

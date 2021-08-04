@@ -1,9 +1,25 @@
 @import "variables";
 
 //_______________________________ UTILITIES
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   position: relative;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100%;
+  /* overflow-x: hidden; */
+  margin: 0;
+  padding: 0;
+  font-family: $text-font;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+p, h4 {
+  line-height: 1.6;
 }
 
 main {
@@ -32,24 +48,7 @@ main {
     }
 }
 //_______________________________ GLOBALS
-html {
-  scroll-behavior: smooth;
-}
-body {
-  position: relative;
-  box-sizing: border-box;
-  width: 100vw;
-  max-width: 100%;
-  /* overflow-x: hidden; */
-  margin: 0;
-  padding: 0;
-  font-family: $text-font;
-  font-size: 16px;
-}
 
-p, h4 {
-  line-height: 1.6;
-}
 @media screen and (min-device-width: 1200px) {
   p, h4 {
     line-height: 1.8;
