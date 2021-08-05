@@ -32,7 +32,7 @@
 }
 /* _______________________________ contact form */
 .contact-form {
-    label, input {
+    label, input, textarea {
         display: block;
         width: 100%;
         box-sizing: border-box;
@@ -43,11 +43,8 @@
         margin-bottom: 10px; 
     }
     input {
-        height: 48px;
-        margin-bottom: 36px;
-    }
-    input[type="text-area"] {
-        height: 240px;
+        height: 36px;
+        margin-bottom: 24px;
     }
     input[type="submit"] {
         background-color: $blue;
@@ -56,6 +53,7 @@
         font-weight: bold;
         transition: .2s;
         cursor: pointer;
+        margin-top: 24px;
     }
     input[type="submit"]:hover {
         background-color: $pink;
