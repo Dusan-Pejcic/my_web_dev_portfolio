@@ -1,6 +1,6 @@
 .card__valer-container {
     width: 100%;
-    height: 2vh;
+    height: 1vh;
     display: flex;
     position: absolute;
     bottom: 0;
@@ -16,7 +16,7 @@
 
 .card__services {
     padding: 0;
-    min-height: 60vh;
+    min-height: 75vh;
 }
 .card-services-title {
     color: white;
@@ -29,7 +29,7 @@
 .card li{
     color: white;
     font-size: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
 }
 ul.card__ul{
     list-style-type: disc; 
