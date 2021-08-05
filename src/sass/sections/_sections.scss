@@ -37,20 +37,19 @@
     border-top: 1px solid $mid-grey;
 }
 
-  h3.section__description { //design, development, maintenance
-/*    font-family: $primary-font; */   
-      font-family: $header-font;
-      /* font-weight: bold; */
+  h3.section__description { //design, development, maintenance 
+       font-family: $header-font; 
       font-size: 28px; 
       margin: 0;  
     }
-    h4.section__sub-header { 
-      /* font-family: $header-font; */
+   .section__sub-header { 
+      font-family: $header-font;
       margin: 0;
     }
-    h4.work-description { 
+   .work-description { 
       font-family: $text-font;
       margin: 0;
+      width: 50ch;
   }
 
   @media screen and (min-device-width: 1200px) {
