@@ -29,7 +29,7 @@
 .card li{
     color: white;
     font-size: 14px;
-    margin-bottom: 0px;
+    margin-bottom: 14px;
 }
 ul.card__ul{
     list-style-type: disc; 
@@ -40,7 +40,7 @@ ul.card__ul{
 
 .card__work {
     height: 100%;
-    width: 17vh;
+    width: 16vh;
     padding: 0;
     margin-left: auto;
     .card__ul {
@@ -48,7 +48,7 @@ ul.card__ul{
         margin-top: auto;
         padding: 10px;
         .card__li-item {           
-            margin-bottom: 0; 
+            margin-bottom: 5px; 
         }
     }
     .card__valer-container {
@@ -60,8 +60,14 @@ ul.card__ul{
     .card__services {
         min-height: 80vh;
     }
+
+    .card li{
+        color: white;
+        font-size: 14px;
+        margin-bottom: 28px;
+    }
     .card__work {
-        height: 25vh;
+        min-height: 25vh;
         width: 25vh;
         margin-left: 0;
         .card__ul {

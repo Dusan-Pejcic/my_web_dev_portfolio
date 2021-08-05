@@ -1,10 +1,10 @@
 .work-section {
-    padding-bottom: 0;
+    padding-bottom: 72px;
 }
 .single-work-container {
     min-height: 80vh;
     border-top: none;
-    margin-top: 72px;
+    margin-top: 0;
 }
 .single-work-container:nth-child(1) {
     border: none;
@@ -17,7 +17,7 @@
                             "img  img"
                             "text  text"
                             "link  link";
-    grid-template-rows: 20vh 1fr 50px 50px;
+    grid-template-rows: 22vh 1fr 50px 50px;
     grid-template-columns: 1fr 1fr;
     border-top: 1px solid $dark-grey;
 }
@@ -25,13 +25,14 @@
 .work-section-title-container {
     grid-area: title;
     display: flex;
-    height: 20vh;
+    height: 22vh;
     h3.section__description {
         margin-bottom: -5px;
         margin-top: auto;
         font-size: 36px;
     }
 }
+/* .work-description is in the sections.scss */
 .work-card__container {
     grid-area: card;
     display: flex;
@@ -41,16 +42,21 @@
 }
 .work-img__container {
     grid-area: img;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 .link__container {
     grid-area: link;
+    display: flex;
+    justify-content: flex-end;
 }
 .mockup-img {
     filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
 }
 .phone-mockup {
-    width: 110px;
-    height: 100%;
+    width: 210px;
+    height: auto;
     position: relative;
     z-index: 7;
        
@@ -90,7 +96,6 @@
     } 
 
     .work-img__container {
-        display: flex;
         justify-content: flex-end;
     }
 
@@ -144,4 +149,11 @@
 .link-to-work:hover span {
     background-image: url('../../src/images/right-arrow-pink.svg');
     color: $pink;
+}
+
+@media screen and (min-device-width: 1200px) {
+
+    .link__container {
+        justify-content: flex-start;
+    }
 }
