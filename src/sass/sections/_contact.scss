@@ -5,6 +5,13 @@
 .contact-section__paragraph {
     margin-top: 0;
     margin: 0;
+    a {
+        text-decoration: none;
+        color: $blue;
+        &:hover {
+            color: $pink;
+        }
+    }
 }
 .contact-section__text-container {
     h4 {
@@ -43,7 +50,7 @@
         margin-bottom: 10px; 
     }
     input {
-        height: 36px;
+        height: 40px;
         margin-bottom: 24px;
     }
     input[type="submit"] {
