@@ -1,0 +1,57 @@
+
+
+.thanks-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3.thanks-message { 
+    font-family: $header-font;
+    font-size: 8vh;
+    margin-top: 18px;
+    line-height: 1;
+    margin: 0;
+  }
+
+  .thanks-message-p {
+      font-size: 18px;
+  }
+
+.thanks-btn-container {
+    background-color: $blue;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    
+     a {
+        color: white;
+        font-family: $text-font;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+}
+
+.thanks-btn-container:hover {
+    background-color: $pink;
+}
+
+@media screen and (min-device-width: 1200px) {
+    h3.thanks-message {
+        font-size: 15vh;
+        margin: 0 0 0 -10px;
+    }
+
+    .thanks-btn-container {
+        width: 60%;
+    }
+}
