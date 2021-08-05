@@ -1,17 +1,11 @@
 import '../sass/styles.scss';
-/* import { getNavWidth, setNavWidth } from "./hero"; */
-/* import { alignNavAndText } from "./hero"; */
 import { clickMenu, navMenuOnScroll } from "./nav";
 import { heroSectionTextAnimation } from "./animations";
 import { scrollAimations } from "./animations";
 import { colorFieldsAnimation } from "./animations";
 import { faqPageAnimations } from "./animations";
 import { smHeroTextAnimation } from "./animations";
-/* ______________________ set width of phone mockups */
-import { setHeightOfThePhoneMockup } from "./phone-mockup";
 
-console.log('Webpack Boilerplate');
-/* alignNavAndText(); */
 colorFieldsAnimation();
 clickMenu();
 navMenuOnScroll();
@@ -44,17 +38,6 @@ if(faqSectionIsPresent) {
 
 scrollAimations();
 
-/* _____________________________height of phone mockup */
-
-
-
-const runOnlyOnLargeViewports = (x)=> {
-    if (x.matches) {
-        setHeightOfThePhoneMockup();
-    }
-}
-var x = window.matchMedia("(min-width: 700px)")
-runOnlyOnLargeViewports(x) // Call listener function at run time
 
 
 

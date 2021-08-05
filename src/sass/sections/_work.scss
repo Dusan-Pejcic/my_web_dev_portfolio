@@ -3,6 +3,11 @@
 }
 .single-work-container {
     min-height: 80vh;
+    border-top: 1px solid $light-grey;
+    margin-top: 72px;
+}
+.single-work-container:nth-child(1) {
+    border: none;
 }
 .work__wrap {
     width: 100%;
@@ -77,8 +82,7 @@
 
     .phone-mockup {
             width: auto;
-            /* height is set by javascript and it's the same as the height of the .work__wrap */
-            height: auto;
+            height: 80vh;
             align-self: center;
         }
 
