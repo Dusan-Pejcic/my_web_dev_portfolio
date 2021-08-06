@@ -59,7 +59,7 @@ ul.card__ul{
 
 @media screen and (min-device-width: 1200px) {
     .card__services {
-        min-height: 80vh;
+        min-height: 70vh;
     }
 
     .card li{
@@ -81,9 +81,19 @@ ul.card__ul{
         }
     }  
 }
-@media screen and (min-device-width: 1920px) {
-   
-    .card__services {
-        height: 55vh;
+
+@media screen and (min-device-width: 1440px) {
+    .container {
+        .card__services {
+            min-height: 60vh;
+        }
     }
-}
+  }
+
+  @media screen and (min-device-width: 1600px) {
+    .container {
+        .card__services {
+            min-height: 50vh;
+        }
+    }
+  }
