@@ -45,6 +45,10 @@
         box-sizing: border-box;
         font-family: $text-font;
     }
+    input, textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
     label {
         font-weight: bold;
         margin-bottom: 10px; 
