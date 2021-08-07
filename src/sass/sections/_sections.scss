@@ -42,14 +42,30 @@
       font-size: 28px; 
       margin: 0;  
     }
+
    .section__sub-header { 
       font-family: $header-font;
       margin: 0;
     }
+
    .work-description { 
       font-family: $text-font;
       margin: 0;
       width: 100%;
+  }
+
+  #services .section__description, #contact .section__description {
+    font-size: 50px;
+  }
+
+  .section__description-container, .section__services-description-container {
+    border: none;
+  }
+
+  @media screen and (max-device-width: 374px){
+    #services .section__description, #contact .section__description {
+      font-size: 40px;
+    }
   }
 
   @media screen and (min-device-width: 1200px) {
@@ -74,12 +90,11 @@
 
     h3.section__description { //design, development, maintenance
       font-size: 92px;
-      margin-top: 18px;
-      /* font-weight: 700; */
+      margin-top: 18px; 
       line-height: 1;
     }
     h3.section__description:nth-child(1) {
-        margin-top: 0;
+      margin-top: 0;
     }
 
     .section__container {
@@ -91,10 +106,4 @@
       width: 50ch;
   }
     
-  }
-
-  @media screen and (min-device-width: 1200px) {
-    .section__container {
-        
-    } 
   }

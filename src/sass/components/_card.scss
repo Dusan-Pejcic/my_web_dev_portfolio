@@ -44,6 +44,8 @@ ul.card__ul{
     padding: 0;
     margin-left: auto;
     align-items: flex-start;
+    position: relative;
+    top: -1px;
     .card__ul {
         list-style: none;
         margin-top: auto;
