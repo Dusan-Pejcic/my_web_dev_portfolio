@@ -1,0 +1,28 @@
+#impressum .section__description {
+    font-size: 28px;
+}
+
+@media screen and (min-device-width: 1200px) {
+    #impressum .section__description {
+        font-size: 74px;
+    }
+
+    #impressum p {
+        width: 80ch;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    #impressum p:first-of-type {
+        width: 80ch;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    #impressum a {
+        color: $blue;
+        text-decoration: none;
+    }
+    #impressum a:hover {
+        color: $pink;
+    }
+}
