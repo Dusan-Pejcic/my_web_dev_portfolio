@@ -1,0 +1,29 @@
+.btn-container {
+    background-color: $blue;
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    
+     a {
+        color: white;
+        font-family: $text-font;
+        font-weight: bold;
+        text-decoration: none;
+        
+    }
+}
+
+.btn-container:hover {
+    background-color: $pink;
+}
+
+@media screen and (min-device-width: 1200px) {
+    
+}

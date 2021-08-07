@@ -1,5 +1,4 @@
 
-
 .thanks-wrapper {
     height: 100vh;
     display: flex;
@@ -19,39 +18,18 @@ h3.thanks-message {
       font-size: 18px;
   }
 
-.thanks-btn-container {
-    background-color: $blue;
-    border: none;
-    transition: .2s;
-    cursor: pointer;
-
-    height: 48px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 28px;
-    
-     a {
-        color: white;
-        font-family: $text-font;
-        font-weight: bold;
-        text-decoration: none;
-        
-    }
-}
-
-.thanks-btn-container:hover {
-    background-color: $pink;
-}
+  .thanks-wrapper .btn-container {
+      max-width: 100%;
+  }
 
 @media screen and (min-device-width: 1200px) {
     h3.thanks-message {
         font-size: 15vh;
         margin: 0 0 0 -10px;
     }
-
-    .thanks-btn-container {
-        width: 60%;
+    .thanks-wrapper .btn-container {
+        max-width: 348px;
     }
 }
+
+/* button is in the components ! */

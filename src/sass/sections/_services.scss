@@ -41,6 +41,11 @@
         flex: 1;
         order: 1;
         background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .services-section__text-container .btn-container {
+        margin-top: auto;
     }
     .section__card-container {
         flex: 1;
