@@ -91,7 +91,7 @@
         h3.section__description {
             margin-left: -5px;
             margin-bottom: 0;
-            font-size: 12vh;
+            font-size: clamp(68px, 12vw, 92px);
         }
     } 
 
