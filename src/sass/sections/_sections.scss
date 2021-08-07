@@ -82,6 +82,10 @@
       font-size: 15vh;
       }
 
+      #services .section__description, #contact .section__description {
+        font-size: 12vh;
+      }
+
     .section__description-container, .section__services-description-container {
         padding: 48px 0 48px 0;
         border-top: 1px solid $light-grey;
@@ -89,7 +93,7 @@
     }
 
     h3.section__description { //design, development, maintenance
-      font-size: 92px;
+      font-size: 12vh;
       margin-top: 18px; 
       line-height: 1;
     }
