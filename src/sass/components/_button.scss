@@ -23,7 +23,16 @@
 .btn-container:hover {
     background-color: $pink;
 }
+.sm-btn-display-none {
+    display: none;
+}
 
 @media screen and (min-device-width: 1200px) {
-    
+    .sm-btn-display-none {
+        display: block;
+    }
+
+    .lg-btn-display-none {
+        display: none;
+    }
 }
