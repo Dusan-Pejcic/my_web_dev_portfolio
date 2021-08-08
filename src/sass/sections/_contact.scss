@@ -21,22 +21,7 @@
 .contact-form__container {
     padding-top: 48px;
 }
-@media screen and (min-device-width: 1025px) {
-    .contact-section__text-and-form-container {
-        display: flex;
-        gap: 48px;
-    }
-    .contact-section__text-container {
-        flex: 1;
-        margin-bottom: 72px;
-    }
-    
-    .contact-form__container {
-        flex: 1;
-        padding-top: 0;
-    }
 
-}
 /* _______________________________ contact form */
 .contact-form {
     label, input, textarea {
@@ -74,4 +59,80 @@
     input[type="submit"]:hover {
         background-color: $pink;
     }
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) {
+    .contact-section__text-and-form-container {
+        display: flex;
+        gap: 24px;
+    }
+    .contact-section__text-container {
+        flex: 1;
+        margin-bottom: 0;
+    }
+    
+    .contact-form__container {
+        flex: 1;
+        padding-top: 0;
+    }
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        label, input, textarea {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;   
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 14px;
+        }
+        label {
+            font-family: $primary-font;
+            font-size: 12px;
+            margin-bottom: 0; 
+            letter-spacing: 2px;
+        }
+        input {
+            height: 40px;
+            margin-bottom: 24px;
+        }
+        textarea {
+            font-family: $text-font;
+        }
+        input[type="submit"] {
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+        
+    }
+}
+
+@media screen and (min-device-width: 1025px) {
+    .contact-section__text-and-form-container {
+        display: flex;
+        gap: 48px;
+    }
+    .contact-section__text-container {
+        flex: 1;
+        margin-bottom: 72px;
+    }
+    
+    .contact-form__container {
+        flex: 1;
+        padding-top: 0;
+    }
+
+}
+
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: landscape) {
+
 }
