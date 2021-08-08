@@ -47,7 +47,8 @@
     .small-viewport__menu-button-container {
         display: block;
         position: fixed;
-        top: 0;
+        bottom: 5vh;
+        right: 20px;
         width: 100vw;
         max-width: 100%;
         z-index: 30;
@@ -173,8 +174,7 @@
     justify-content: flex-end;
 }
 .close-button {
-    padding: 10px 10px 0 0;
-    
+    padding: 0 20px 0 0;
     width: 30px;
     height: auto;
 }
