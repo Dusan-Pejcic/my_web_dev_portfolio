@@ -30,8 +30,33 @@
         line-height: 1.8;
     }
 }
+/* _________________________________________TABLET LANDSCAPE */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+    .services-section__body {
+        flex-direction: row;
+    }
+    
+    .services-section__text-container {
+        flex: 1;
+        order: 1;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .services-section__text-container .btn-container {
+        margin-top: auto;
+    }
+    .section__card-container {
+        flex: 1;
+        order: 2;
+        margin: 0;
+    }
+  }
 
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1025px) {
 
     .services-section__body {
         flex-direction: row;

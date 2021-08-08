@@ -59,7 +59,18 @@ ul.card__ul{
     }
 }
 
-@media screen and (min-device-width: 1200px) {
+  /* _________________________________________TABLET LANDSCAPE */
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+    .card__services {
+        padding: 0;
+        min-height: 65vh;
+    }
+  }
+
+@media screen and (min-device-width: 1025px) {
     .card__services {
         min-height: 70vh;
     }
@@ -86,14 +97,6 @@ ul.card__ul{
         }
     }  
 }
-
-/* @media screen and (min-device-width: 1440px) {
-    .container {
-        .card__services {
-            min-height: 65vh;
-        }
-    }
-  } */
 
    @media screen and (min-device-width: 1600px) {
     .container {

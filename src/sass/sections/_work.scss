@@ -62,7 +62,7 @@
        
 }
 
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1025px) {
     .single-work-container {
         min-height: 80vh;
         border-top: 1px solid $light-grey;
@@ -151,7 +151,7 @@
     color: $pink;
 }
 
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1025px) {
 
     .link__container {
         justify-content: flex-start;

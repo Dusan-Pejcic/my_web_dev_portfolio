@@ -39,7 +39,7 @@ main {
     display: block;
 }
 
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1025px) {
     .sm-display-none {
         display: block;
     }
@@ -49,7 +49,7 @@ main {
 }
 //_______________________________ GLOBALS
 
-@media screen and (min-device-width: 1200px) {
+@media screen and (min-device-width: 1025px) {
   p, h4 {
     line-height: 1.8;
   }
@@ -73,7 +73,32 @@ ul {
   background-color: transparent;
 }
 
-@media screen and (min-device-width: 1200px) {
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape){
+
+    .sm-display-none {
+      display: block;
+  }
+  .lg-display-none {
+      display: none;
+  }
+    .container {
+      max-width: 1200px;
+    }
+    .container--white {
+      background-color: white;
+    }
+  
+    .inner-container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 72px 0 16px 0
+    }
+  }
+
+@media screen and (min-device-width: 1025px) {
 
   .container {
     max-width: 1200px;
