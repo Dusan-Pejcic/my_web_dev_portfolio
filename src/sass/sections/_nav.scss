@@ -1,4 +1,5 @@
-
+/* There is so many media queries that are all over the place because I thought that 
+it's easier to group them around a feature.  */
 .nav-container {
     width: 100vw;
     max-width: 100%;
@@ -53,6 +54,19 @@
         max-width: 100%;
         z-index: 30;
     }
+     //________________ TABLET LANDSCAPE
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape) {
+    
+        .small-viewport__menu-button-container {
+            top: 5vh;
+            right: 5vw;
+            width: 100vw;
+            height: 5vh;
+        }
+    }
     
     .menu-icon-container {
         position: sticky;
@@ -89,20 +103,9 @@
         display: none;
     }
 
-    //_____________________________________ TABLET LANDSCAPE
+   
 
-    @media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation: landscape) {
 
-    .small-viewport__menu-button-container {
-        top: 5vh;
-        right: 5vw;
-        width: 100vw;
-        height: 5vh;
-    }
-}
 
 
     @media screen and (min-device-width: 1025px) {
@@ -159,6 +162,20 @@ and (orientation: landscape) {
             font-family: $primary-font;
             font-size: 48px;
             
+        }
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+    .sm-menu {
+        li {
+            margin-bottom: 16px;
+        }
+        li a{
+            font-size: 92px; 
         }
     }
   }
@@ -220,6 +237,15 @@ and (orientation: landscape) {
 .large-menu {
     display: none;    
 }
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+    .close-button {
+        padding: 1vh 7vh 0 0;
+    } 
+  }
+
 
 @media screen and (min-device-width: 1025px) {
     .nav-container {
@@ -236,7 +262,9 @@ and (orientation: landscape) {
     }
     //____________________ slide nav
     .close-button {
-        padding: 0 30px 0 0;
+        padding: 0 20px 0 0;
+        position: relative;
+        top: -10px;
     }
 }
     
