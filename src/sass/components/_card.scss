@@ -69,6 +69,22 @@ ul.card__ul{
         min-height: 65vh;
     }
   }
+  @media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) {
+    .card__services {
+        padding: 0;
+        min-height: 65vh;
+    }
+
+    .card li {
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+}
 
 @media screen and (min-device-width: 1025px) {
     .card__services {
