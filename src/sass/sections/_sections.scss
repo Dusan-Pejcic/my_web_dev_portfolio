@@ -79,6 +79,12 @@ and (orientation: landscape) {
   .section__container {
     padding: 48px 48px 72px 48px;
 }
+.section--white {
+  background-color: $light-grey;
+}
+.section--grey {
+  background-color: $light-grey;
+}
 }
 
   @media screen and (min-device-width: 1025px) {
