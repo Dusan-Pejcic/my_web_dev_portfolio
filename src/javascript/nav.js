@@ -4,7 +4,7 @@ export const navMenuOnScroll = ()=> {
     window.addEventListener('scroll', ()=> {
         const scrollAmount = window.scrollY;
 
-        if (scrollAmount > (ViewportHeight + 200)) {
+        if (scrollAmount > (ViewportHeight + 100)) {
             menuButton.classList.add("icon__container--visable");
             
         } else {

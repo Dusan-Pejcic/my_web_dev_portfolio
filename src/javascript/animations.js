@@ -126,8 +126,8 @@ if(firstSectionHeaderIsPresent){
         
         ScrollTrigger.create({
             animation: cardServices,
-            trigger: ".section__card-container",
-            start: 'top bottom',
+            trigger: ".section__services-description-container",
+            start: 'bottom bottom',
             end: "+=500"
         })
     
@@ -137,7 +137,8 @@ if(firstSectionHeaderIsPresent){
         const works = document.querySelectorAll('.single-work-container');
         works.forEach((work)=>{
             const phoneMockup = work.querySelector('.phone-mockup');
-            const tabletMockup = work.querySelector('.tablet-mockup');
+            const workTitle = work.querySelector('.section__description');
+            const workDescription = work.querySelector('.work-description');
             const cardWork = work.querySelector('.card__work');
 
             const mockupsAnim = gsap.timeline({defaults: {
@@ -145,14 +146,15 @@ if(firstSectionHeaderIsPresent){
                 opacity: 0,
                 ease:Power4.easeOut,    
             }});
-            mockupsAnim.from(phoneMockup, {y:100})
-            .from(tabletMockup,{y:100}, '-=.3')
+            mockupsAnim.from(workTitle, {y:100})
+            .from(phoneMockup,{y:100}, '-=.3')
             .from(cardWork, {y:100}, '-=.5')
+            .from(workDescription, {y:48}, '-=.5')
 
             ScrollTrigger.create({
                 animation: mockupsAnim,
                 trigger: work,
-                start: 'top 40%'
+                start: 'top 60%'
             })
         })
     }
@@ -167,8 +169,8 @@ if(firstSectionHeaderIsPresent){
             y: 100,
             ease:Power4.easeOut, 
             scrollTrigger: {
-                trigger: form,
-                start: 'top bottom',
+                trigger: '#contact .section__description',
+                start: 'top 60%',
             }
         })
     }
