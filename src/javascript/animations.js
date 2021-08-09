@@ -15,40 +15,40 @@ export const colorFieldsAnimation = ()=> {
 export const heroSectionTextAnimation = ()=> {
 /* ______________________________________________lg hero text animation */
     const heroTextL = gsap.timeline({ defaults: {duration: .6,
-        opacity: 0,
+        opacity: 1,
         stagger: 0.05,
         ease:Power4.easeOut,} });
 
-    heroTextL.from('.first-row', {
+    heroTextL.to('.first-row', {
 
-        }).from('.second-row', {
+        }).to('.second-row', {
             
-        }, '-=.7' ).from('.third-row', {
+        }, '-=.7' ).to('.third-row', {
             
-        }, '-=.7').from('.fourth-row', {
+        }, '-=.7').to('.fourth-row', {
             
         }, '-=.7')
 }
 
 export const smHeroTextAnimation = ()=> {
     const smHeroTextL = gsap.timeline({ defaults: {duration: .6,
-        opacity: 0,
+        opacity: 1,
         stagger: 0.05,
         ease:Power4.easeOut,} });
 
-    smHeroTextL.from('.sm-first-row', {
+    smHeroTextL.to('.sm-first-row', {
 
-        }).from('.sm-second-row', {
+        }).to('.sm-second-row', {
             
-        }, '-=.7' ).from('.sm-third-row', {
+        }, '-=.7' ).to('.sm-third-row', {
             
-        }, '-=.7').from('.sm-fourth-row', {
+        }, '-=.7').to('.sm-fourth-row', {
             
-        }, '-=.7').from('.sm-fifth-row', {
+        }, '-=.7').to('.sm-fifth-row', {
             
-        }, '-=.7').from('.sm-sixth-row', {
+        }, '-=.7').to('.sm-sixth-row', {
             
-        }, '-=.7').from('.sm-seventh-row', {
+        }, '-=.7').to('.sm-seventh-row', {
             
         }, '-=.7')
 }

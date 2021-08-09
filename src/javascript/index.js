@@ -18,9 +18,11 @@ const heroText = document.querySelector('body').contains(heroTextContainer);
 if(heroText){
     function myFunction(x) {
         if (x.matches) { // If media query matches
-            smHeroTextAnimation();
+            setTimeout(function(){ smHeroTextAnimation(); }, 500);
+            
         } else {
-            heroSectionTextAnimation();
+            setTimeout(function(){ heroSectionTextAnimation(); }, 500);
+            
         }
       }
     var x = window.matchMedia("(max-width: 700px)")
