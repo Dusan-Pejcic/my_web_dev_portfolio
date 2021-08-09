@@ -81,7 +81,7 @@ and (orientation: landscape) {
                                 
         grid-template-rows: 22vh 1fr 50px ;
         grid-template-columns: 20vh 1fr 16vh;
-        border-top: 1px solid $dark-grey;
+        border-top: 1px solid $light-grey;
     }
 
     .work-section-text-container {
@@ -109,6 +109,57 @@ and (orientation: landscape) {
         height: 80vh;      
     }
 
+}
+
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) {
+   
+    .inner-container {
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .work__wrap {
+        width: 100%;
+        height: 100%; 
+        display: grid;
+        grid-template-areas:    "title img "
+                                "text img "
+                                "card img "
+                                "link img ";
+                                
+        grid-template-rows: 22vh 1fr 20vh auto ;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid $light-grey;
+    }
+    .single-work-container:nth-child(1) .work__wrap {
+        border: none;
+    }
+    .link__container {
+        justify-content: flex-start;
+    }
+    .work-img__container {
+        justify-content: flex-end;
+        padding: 30px 0 0 30px;
+    }
+
+    .phone-mockup {
+        width: auto;
+        height: 60vh;      
+    }
+}
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) {
+  .work-section-title-container {
+    h3.section__description {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 @media screen and (min-device-width: 1025px) {
@@ -207,7 +258,11 @@ and (orientation: landscape) {
 @media only screen 
 and (min-device-width: 768px) 
 and (max-device-width: 1024px) 
-and (orientation: landscape) {
+and (orientation: landscape),
+only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation: portrait) {
 
     .link-to-work {
         margin-top: auto;

@@ -68,6 +68,7 @@ ul.card__ul{
         padding: 0;
         min-height: 65vh;
     }
+
   }
   @media only screen 
 and (min-device-width: 768px) 
@@ -76,6 +77,9 @@ and (orientation: portrait) {
     .card__services {
         padding: 0;
         min-height: 65vh;
+    }
+    .card__work {
+        margin-left: 0;
     }
 
     .card li {
