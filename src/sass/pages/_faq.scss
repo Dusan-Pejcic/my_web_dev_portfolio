@@ -41,7 +41,7 @@ h2.faq-section__header {
 .faq-intro--white {
     font-family: $text-font;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 5vh;
     padding-top: 28px;
 }
 .faq-intro--black{
@@ -56,6 +56,79 @@ h2.faq-section__header {
 .faq-field-intro {
     padding: 20px;
 }
+
+@media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) 
+    and (orientation: landscape){
+        .faq-page__container {
+            max-width: 90vw;
+        }
+        .faq-container {
+            height: auto;
+            display: flex;
+        }
+        
+        .faq-field {
+            flex: 1;
+            padding: 24px;
+            p {
+                margin: 0;
+            }
+        }
+    
+        .faq-field--white {
+            font-size: 28px;
+            font-weight: 300;
+        }
+        .faq-field-intro {
+            padding: 64px 64px 120px 64px;
+        }
+    
+        .faq-intro--white {
+            font-size: 36px;
+        }
+        .faq-intro--black{
+            font-size: 20px; 
+        }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+    .faq-page__container {
+        max-width: 90vw;
+    }
+    .faq-container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .faq-field {
+        flex: 1;
+        padding: 64px;
+        p {
+            margin: 0;
+        }
+    }
+
+    .faq-field--white {
+        font-size: 5vw;
+        font-weight: 300;
+    }
+    .faq-field-intro {
+        padding: 64px 64px 120px 64px;
+    }
+
+    .faq-intro--white {
+        font-size: 48px;
+    }
+    .faq-intro--black{
+        font-size: 20px; 
+    } 
+  }
 
 @media screen and (min-device-width: 1025px) {
 
@@ -84,7 +157,7 @@ h2.faq-section__header {
     }
 
     .faq-intro--white {
-        font-size: 48px;
+        font-size: 5vh;
     }
     .faq-intro--black{
         font-size: 20px; 
