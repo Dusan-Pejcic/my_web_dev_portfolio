@@ -76,6 +76,45 @@ and (orientation: landscape) {
 
 }
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+    .hero-section {
+      .hero-text-container {
+       
+  
+        .hero-text-sm {
+          display: none;
+        }
+  
+        .hero-text-l {
+          display: block;
+          font-size: 8vh;
+          margin-top: auto;
+          padding-bottom: 10vh;
+      
+          line-height: 1.2;
+        }
+  
+        h1 {
+          font-size: 20px;
+          text-align: right;
+          font-weight: 400;
+          span {
+            font-size: 32px;
+            font-weight: bold;
+          }
+        }
+      }
+      .hero__h1-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+
 @media screen and (min-device-width: 1025px) {
   .hero-section {
     .hero-text-container {

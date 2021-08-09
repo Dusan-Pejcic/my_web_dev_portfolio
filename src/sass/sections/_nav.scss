@@ -58,7 +58,11 @@ it's easier to group them around a feature.  */
     @media only screen 
     and (min-device-width: 768px) 
     and (max-device-width: 1024px) 
-    and (orientation: landscape) {
+    and (orientation: landscape),
+    only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
     
         .small-viewport__menu-button-container {
             top: 5vh;
@@ -244,6 +248,15 @@ it's easier to group them around a feature.  */
     .close-button {
         padding: 1vh 7vh 0 0;
     } 
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+    .close-button {
+       /*  padding: 1vh 7vh 0 0;  ? */
+    }
   }
 
 
