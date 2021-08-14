@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "serve": "webpack serve --mode development"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
