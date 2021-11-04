@@ -53,7 +53,7 @@
     
 }
 .mockup-img {
-    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(10px 20px 10px rgba(0, 0, 0, 0.2)) drop-shadow(5px 10px 5px rgba(0, 0, 0, 0.5));
 }
 .phone-mockup {
     width: 210px;
@@ -174,6 +174,10 @@ and (orientation: portrait) {
         border-top: 1px solid $light-grey;
         margin-top: 72px;
     }
+    .single-work-container:first-child {
+        margin-top: 0;
+
+    }
     .work-section {
         padding-bottom: 120px;
     }
@@ -197,7 +201,7 @@ and (orientation: portrait) {
         h3.section__description {
             margin-left: -5px;
             margin-bottom: 0;
-            font-size: clamp(68px, 12vw, 92px);
+            font-size: clamp(68px, 12vw, 84px);
         }
     } 
 
