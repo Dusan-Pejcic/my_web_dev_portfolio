@@ -150,7 +150,7 @@ and (orientation: portrait) {
 
     .phone-mockup {
         width: auto;
-        height: 60vh;      
+        height: 80vh;        
     }
 }
 @media only screen 
@@ -202,6 +202,7 @@ and (orientation: portrait) {
             margin-left: -5px;
             margin-bottom: 0;
             font-size: clamp(68px, 12vw, 84px);
+            color: $dark-grey;
         }
     } 
 
@@ -227,9 +228,6 @@ and (orientation: portrait) {
 //__________________________ link to work
 
 .link-to-work {
-    /* margin-top: 10px;
-    height: 18px;
-    width: 110px; */
     display: flex;
     justify-content: space-between;
     text-decoration: none;
@@ -250,4 +248,11 @@ and (orientation: portrait) {
     .link {
         width: 25vh;
     }
+}
+
+@media screen and (min-device-width: 1920px) {
+   .phone-mockup {
+    height: 60vh;
+    margin-top: 20vh;
+   } 
 }

@@ -46,6 +46,7 @@
       font-family: $header-font; 
       font-size: 28px; 
       margin: 0;  
+      color: $dark-grey;
     }
 
    .section__sub-header { 
@@ -130,7 +131,7 @@ and (orientation: portrait) {
     .work-description { 
       font-family: $text-font;
       margin: 0;
-      width: 50ch;
+      width: 45ch;
   }
     
   }
